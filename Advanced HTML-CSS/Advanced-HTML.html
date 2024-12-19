@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    aside {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section 1 -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to the homepage. Explore our content and learn more about what we do.</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="about">
+      <h2>About Us</h2>
+      <article>
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide high-quality services that make your life easier.</p>
+      </article>
+      <article>
+        <h3>Our Vision</h3>
+        <p>We envision a future where technology empowers everyone.</p>
+      </article>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <article>
+        <h3>Understanding Semantic HTML</h3>
+        <p>Semantic HTML is a cornerstone of modern web development...</p>
+        <a href="#">Read more</a>
+      </article>
+      <article>
+        <h3>10 Tips for Accessible Web Design</h3>
+        <p>Creating an inclusive web experience is crucial for reaching all users...</p>
+        <a href="#">Read more</a>
+      </article>
+    </section>
+    <section>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+    <label for="city">City:</label>
+    <input list="cities" id="city" name="city">
+    <datalist id="cities">
+      <option value="New York">
+      <option value="London">
+      <option value="Tokyo">
+    </datalist>
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100">
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit" method="POST">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </fieldset>
+      
+        <fieldset>
+          <legend>Payment Details</legend>
+          <label for="card">Card Number:</label>
+          <input type="text" id="card" name="card">
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" name="expiry">
+        </fieldset>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+    </section>
+
+    <!-- Aside (Sidebar) -->
+    <aside>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#home">Go to Home</a></li>
+        <li><a href="#about">Learn About Us</a></li>
+        <li><a href="#blog">Read Our Blog</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
